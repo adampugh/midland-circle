@@ -1,5 +1,5 @@
 ---
-path: cool
+path: /cool
 date: '2019-04-25'
 title: cool
 ---
