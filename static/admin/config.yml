@@ -3,7 +3,6 @@ backend:
   repo: adampugh/midland-circle
 
 media_folder: static/assets
-public_folder: assets
 
 collections:
   - name: blog
