@@ -1,6 +1,6 @@
 ---
-path: /cool-blog
+path: cool
 date: '2019-04-25'
-title: This is a very cool blog no doubt
+title: cool
 ---
-ithink so but i'm not sure to be honest
+i think so but i'm not sure to be honest
