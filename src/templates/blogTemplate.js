@@ -8,6 +8,7 @@ export default function Template({
   return (
     <div className="blog-post-container">
       <div className="blog-post">
+        <img src={frontmatter.thumbnail} alt="thumbail" />
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
         { console.log(frontmatter) }
@@ -28,6 +29,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        thumbnail
       }
     }
   }
