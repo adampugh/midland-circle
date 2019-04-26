@@ -2,7 +2,8 @@ backend:
   name: github
   repo: adampugh/midland-circle
 
-media_folder: static/assets
+media_folder: "static/assets"
+public_folder: "public/assets"
 
 collections:
   - name: blog
@@ -14,3 +15,5 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      # - { name: image, label: Image, widget: image, required: false }
