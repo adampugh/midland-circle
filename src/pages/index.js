@@ -1,12 +1,13 @@
 import React from "react"
 import Layout from '../components/Layout';
 
+// fetch blog data from markdown files
+
 const Home = () => (
     <Layout>
         <h1>hello</h1>
         <button className="btn btn-primary">click this</button>
     </Layout>
-)
-
+);
 
 export default Home;
