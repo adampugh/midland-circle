@@ -1,6 +1,10 @@
 import React, { Component } from "react"
-import Layout from '../components/Layout';
 import { Link } from 'react-router-dom';
+
+import Layout from '../components/Layout';
+import Navbar from '../components/UI/Navbar';
+
+import City from '../../static/assets/city.png';
 
 // fetch blog data from markdown files
 
@@ -12,11 +16,25 @@ class Home extends Component {
         return (
             <Layout>
                 { console.log(edges) }
-                <h1>hello</h1>
-                <button className="btn btn-primary">click this</button>
-                { edges.map(edge => <div>
+                
+                <div className="home__hero">
+                  <Navbar />
+                  <div className="home__hero__text__wrapper">
+                  <div className="home__hero__text">
+                    <h1>Building A New Future</h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, in? Fuga iure repellat necessitatibus eos et dignissimos vero aliquid perspiciatis?
+                    </p>
+                    <button className="btn">Read More</button>
+                  </div>
+                  
+                  <img src={City} alt="city" className="home__hero__img"/>
+                  </div>
+                </div>
+                { edges.map(edge => <div key={edge.node.id}>
                     <Link to={edge.node.frontmatter.path}>{edge.node.frontmatter.title}</Link>
-                    </div>)}
+                    </div>
+                )}
             </Layout>
         )
     }

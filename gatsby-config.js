@@ -10,6 +10,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    
+    // allows gatsby v1 to use react v16
+    `gatsby-plugin-react-next`
   ],
 }
