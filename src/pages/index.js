@@ -7,7 +7,7 @@ import Navbar from '../components/UI/Navbar';
 import City from '../../static/assets/city.png';
 
 // fetch blog data from markdown files
-
+// setup blog section
 
 class Home extends Component {
     render() {
